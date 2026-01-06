@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Darlington — Professional Portfolio</title>
+  <meta name="description" content="Darlington — Remote Customer Service Representative / Digital Professional. Portfolio, skills, experience, projects and contact." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+  <!-- Basic styling: clean, modern, responsive -->
+  <style>
+    :root{
+      --bg:#0f1724; /* deep navy */
+      --card:#0b1220;
+      --muted:#94a3b8;
+      --accent:#06b6d4;
+      --glass: rgba(255,255,255,0.03);
+      --glass-2: rgba(255,255,255,0.02);
+      --radius:14px;
+      --max-w:1100px;
+      --gap:20px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background: linear-gradient(180deg,var(--bg),#071028 120%);
+      color:#e6eef6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:40px 18px;
+      display:flex;
+      justify-content:center;
+    }
+    .wrap{
+      width:100%;
+      max-width:var(--max-w);
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:28px;
+    }
+    .brand{
+      display:flex;gap:12px;align-items:center;
+    }
+    .logo{
+      width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#8b5cf6);
+      display:grid;place-items:center;font-weight:700;color:#021025;font-size:18px;
+      box-shadow:0 6px 18px rgba(6,182,212,0.08), inset 0 -6px 18px rgba(255,255,255,0.02);
+    }
+    .name{line-height:1}
+    .name h1{font-size:18px;margin:0}
+    .name p{margin:0;font-size:13px;color:var(--muted)}
+
+    nav{display:flex;gap:12px;align-items:center}
+    a.btn{
+      text-decoration:none;padding:10px 14px;border-radius:10px;background:var(--glass);
+      color:var(--accent);font-weight:600;font-size:14px;border:1px solid rgba(255,255,255,0.03)
+    }
+
+    /* Hero */
+    .hero{
+      display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:start;
+    }
+    .card{
+      background:linear-gradient(180deg,var(--card),#071021);
+      border-radius:var(--radius);
+      padding:22px;
+      box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+      border:1px solid rgba(255,255,255,0.02);
+      backdrop-filter: blur(6px);
+    }
+    .intro h2{margin:0 0 8px;font-size:28px}
+    .intro p.lead{margin:0;color:var(--muted);line-height:1.6}
+    .cta {margin-top:18px;display:flex;gap:12px}
+    .primary{
+      background:linear-gradient(90deg,var(--accent),#7c3aed);color:#021025;padding:12px 16px;border-radius:12px;font-weight:700;text-decoration:none;
+    }
+
+    /* Right column: profile card */
+    .profile{
+      text-align:center;padding:18px;
+    }
+    .avatar{
+      width:120px;height:120px;border-radius:16px;margin:0 auto 12px;background:linear-gradient(180deg,#0ea5a4,#7c3aed);
+      display:grid;place-items:center;font-weight:800;color:#021025;font-size:34px;
+    }
+    .roles{color:var(--muted);font-size:14px;margin-bottom:14px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+    .tag{background:var(--glass-2);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted);}
+
+    /* Sections */
+    section{margin-top:20px;display:grid;gap:12px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .project{display:flex;flex-direction:column;gap:10px}
+    .project h3{margin:0;font-size:16px}
+    .project p{margin:0;color:var(--muted);font-size:14px}
+    .meta{font-size:13px;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap}
+
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px;padding:18px}
+
+    /* responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr; }
+      .grid-3{grid-template-columns:1fr}
+      .grid-2{grid-template-columns:1fr}
+      header{flex-direction:column;align-items:flex-start;gap:10px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap" role="main" aria-label="Portfolio">
+    <header>
+      <div class="brand" aria-hidden="false">
+        <div class="logo" aria-hidden="true">D</div>
+        <div class="name">
+          <h1>TechDarlington</h1>
+          <p>Remote Customer Service • Digital Professional</p>
+        </div>
+      </div>
+      <nav>
+        <a class="btn" href="#about">About</a>
+        <a class="btn" href="#projects">Projects</a>
+        <a class="btn" href="#contact">Contact</a>
+        <a class="btn" href="your-resume.pdf" download>Download CV</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div class="card intro" id="about" tabindex="0">
+        <h2>Remote Customer Service Representative</h2>
+        <p class="lead">I help companies increase customer satisfaction and retention by delivering fast, empathetic, and technically accurate support across chat, email, and phone. Skilled with CRM systems, remote troubleshooting and performance-driven targets.</p>
+
+        <div class="cta">
+          <a class="primary" href="#contact">Hire me</a>
+          <a class="btn" href="#projects">View work</a>
+        </div>
+
+        <section aria-label="Experience highlights" style="margin-top:18px">
+          <div class="card" style="padding:12px;">
+            <div class="meta">
+              <span><strong>Availability:</strong> Remote, Full-time</span>
+              <span><strong>Timezone:</strong> Africa/Lagos (UTC+1)</span>
+            </div>
+            <ul style="margin:12px 0 0;color:var(--muted)">
+              <li>3+ years remote customer support & outbound sales experience</li>
+              <li>Tools: HubSpot, Zendesk, Aircall, AnyDesk</li>
+              <li>Top performer: appointment booking, lead conversion</li>
+            </ul>
+          </div>
+        </section>
+
+        <section aria-label="Summary" style="margin-top:16px">
+          <h3 style="font-size:15px;margin:0 0 8px">Core Competencies</h3>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <span class="tag">Customer Success</span>
+            <span class="tag">CRM & Tickets</span>
+            <span class="tag">Outbound Sales</span>
+            <span class="tag">Remote Troubleshooting</span>
+            <span class="tag">Performance Metrics</span>
+          </div>
+        </section>
+      </div>
+
+      <aside class="card profile" aria-label="Profile card">
+        <div class="avatar" aria-hidden="true">D</div>
+        <div style="font-weight:700">Darlington</div>
+        <div class="roles">Remote Customer Service Representative</div>
+
+        <div style="text-align:left;margin-top:12px">
+          <strong>Contact</strong>
+          <div class="meta" style="margin-top:6px">
+            <span>Email: <a href="mailto:nesfielddarlington@gmail.com" style="color:var(--accent)">nesfielddarlington@gmail.com</a></span>
+            <span>Phone: +234-814-656-7377</span>
+          </div>
+        </div>
+
+        <div style="margin-top:14px">
+          <strong>Skills</strong>
+          <div class="skills" style="margin-top:8px">
+            <span class="tag">Zendesk</span>
+            <span class="tag">HubSpot</span>
+            <span class="tag">Aircall</span>
+            <span class="tag">Salesforce</span>
+            <span class="tag">Trello</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Projects / Experience -->
+    <section id="projects" class="card" aria-labelledby="projects-title">
+      <h2 id="projects-title" style="margin:0 0 8px">Experience & Projects</h2>
+
+      <div class="grid-2">
+        <div class="project card">
+          <h3>Referrizer (UK) — Remote Customer Support</h3>
+          <p class="meta">Jan 2022 – Dec 2022 • Lead support & onboarding</p>
+          <p>Booked qualified appointments, ran onboarding sessions, and improved trial-to-paid conversion by proactive follow-ups and automated nurture sequences.</p>
+        </div>
+
+        <div class="project card">
+          <h3>Coastal Homes (US) — Remote Sales Support</h3>
+          <p class="meta">Jan 2023 – Oct 2023 • Lead qualification & CRM management</p>
+          <p>Managed property inquiries, scheduled viewings, and maintained CRM records to support agents and improve lead conversion efficiency.</p>
+        </div>
+
+        <div class="project card">
+          <h3>Ecore (US) — Customer Success Specialist</h3>
+          <p class="meta">Nov 2023 – Present • Orders, logistics & KB</p>
+          <p>Handled order inquiries, coordinated logistics, and contributed to the knowledge base to reduce average handle time and ticket volume.</p>
+        </div>
+
+        <div class="project card">
+          <h3>Sharples Enterprises (AU) — Customer Care</h3>
+          <p class="meta">Jun 2021 – Dec 2021 • Support & escalation</p>
+          <p>Provided real-time support, maintained CRM logs, and ensured SLAs were met through timely escalations and follow-ups.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section class="card" aria-labelledby="edu-title">
+      <h2 id="edu-title" style="margin:0 0 8px">Education & Certifications</h2>
+      <div class="grid-3">
+        <div class="card project">
+          <h3>Bachelor Degree in Computer Science</h3>
+          <p class="meta">National Open University • 2026</p>
+        </div>
+        <div class="card project">
+          <h3>Certified Customer Service Professional</h3>
+          <p class="meta">Certification Body • Year</p>
+        </div>
+        <div class="card project">
+          <h3>Online: HubSpot Sales & Zendesk Support</h3>
+          <p class="meta">Digital Marketing Certified: HubSpot Academy • Nov 6 2025</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="card" aria-labelledby="contact-title">
+      <h2 id="contact-title" style="margin:0 0 8px">Contact</h2>
+
+      <p style="margin:0 0 12px;color:var(--muted)">Want to collaborate or hire me? Drop a message below or email me directly.</p>
+
+      <form id="contactForm" class="card" style="display:flex;flex-direction:column;gap:10px;padding:12px">
+        <label style="font-size:13px;color:var(--muted)">Your Name
+          <input required id="name" name="name" type="text" placeholder="Full name" style="width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit" />
+        </label>
+
+        <label style="font-size:13px;color:var(--muted)">Email
+          <input required id="email" name="email" type="email" placeholder="you@example.com" style="width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit" />
+        </label>
+
+        <label style="font-size:13px;color:var(--muted)">Message
+          <textarea required id="message" name="message" rows="4" placeholder="How can I help?" style="width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit"></textarea>
+        </label>
+
+        <div style="display:flex;gap:10px;justify-content:flex-end">
+          <button type="submit" class="primary" style="border:none">Send Message</button>
+          <a class="btn" href="mailto:youremail@example.com">Email Me</a>
+        </div>
+
+        <div id="status" aria-live="polite" style="color:var(--muted);font-size:13px"></div>
+      </form>
+    </section>
+
+    <footer class="card">
+      © <span id="yr"></span> TechDarlington — Remote Customer Service Representative. — Built with care.
+    </footer>
+  </div>
+
+  <script>
+    // fill the year
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // simple contact form behaviour (client-side only)
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      if(!name || !email || !message){
+        document.getElementById('status').textContent = 'Please fill all fields.';
+        return;
+      }
+      // create mailto fallback
+      const subject = encodeURIComponent('Portfolio inquiry from ' + name);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+      const mailto = `mailto:youremail@example.com?subject=${subject}&body=${body}`;
+      window.location.href = mailto;
+      document.getElementById('status').textContent = 'Preparing email...';
+    });
+  </script>
+</body>
+</html>
