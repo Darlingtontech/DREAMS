@@ -1,0 +1,1 @@
+DREAMS TECH is an innovative technology initiative focused on delivering high-quality solutions in robotics, automation, and STEM education. Our mission is to empower youth and enthusiasts with practical skills, creative problem-solving, and hands-on technology experience.
